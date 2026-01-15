@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
-  "version": "2.0.0",
-  "description": "Second Version ofmy Portfolio Site. This is a much simplier design which I made through Figma, it will invetiable change as time goes on.",
+  "version": "3.0.0",
+  "description": "Third Version of my Portfolio Site. This is a much simpler design which of the second version for my current Job looking.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
