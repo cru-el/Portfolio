@@ -1,6 +1,6 @@
 require('./config/config');;
-const hostname = process.env.HOSTNAME;
-const port = process.env.PORT;
+const hostname = process.env.SERVER_HOSTNAME;
+const port = process.env.SERVER_PORT;
 
 /*    Dependency Installation    */
 const express = require('express');
