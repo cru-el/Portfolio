@@ -11,14 +11,14 @@ const app = new express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}) );
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(`${__dirname}/dist/browser`));
 
 app.use('/api', apiRoute);
 
 
 /*      GET     */
-app.get('*', function(req, res) {
-    res.sendFile(__dirname + '/dist/index.html');
+app.get('/', function(req, res) {
+    res.sendFile(`${__dirname}/dist/browser/index.html`);
 });
 
 app.listen(port, hostname, () => {
