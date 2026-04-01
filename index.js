@@ -20,6 +20,9 @@ app.use('/api', apiRoute);
 app.get('/', function(req, res) {
     res.sendFile(`${__dirname}/dist/browser/index.html`);
 });
+app.get('*splat', function(req, res) {
+    res.redirect('/');
+});
 
 app.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
